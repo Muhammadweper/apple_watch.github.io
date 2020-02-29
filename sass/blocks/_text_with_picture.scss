@@ -1,0 +1,40 @@
+.block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    align-items: center;
+
+    .block_text_left{
+        width: 390px;
+        h1{
+            text-transform: capitalize;
+            font-size: 48px;
+        }
+        p{
+            padding: 30px 0 30px 30px;
+            position: relative;
+            color: rgb(148, 141, 141);
+            &::before{
+                content: "";
+                height: 55px;
+                border-left: 2px solid rgb(148, 141, 141);
+                position: absolute;
+                left: 10px;
+            }  
+        }
+        a{
+            text-decoration: none;
+            background-color: tomato;
+            color: rgb(252, 252, 252);
+            font-style: bold;
+            text-transform: uppercase;
+            padding: 10px 25PX;  
+        }
+    }
+     .img_right{
+        .img_watch{
+            width: 460px;
+            height: 740px; 
+        }
+     }    
+}

@@ -1,0 +1,58 @@
+.main_texts{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    .text_one{
+        max-width: 30%;
+        
+        .main_txt_bold{
+            text-transform: uppercase;
+            font-size: 15px;
+            text-shadow:0 0 1px  black;
+            white-space: nowrap;
+            
+        }   
+      
+       .main_points{
+           list-style:none;
+           color: rgb(148, 134, 134);
+           display: flex;
+           margin: 0;
+           padding: 0;
+           li{              
+               font-size: 35px;
+           }
+       }
+
+    }
+    
+    .link a{
+        display: flex;
+        align-items: center;
+        color: tomato;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+           &::before{
+               content: "";
+               height: 2px;
+               width: 30px;
+               margin-right: 5px;
+               background-color:tomato;
+               transition:width 0.2s ease-in  ;
+           }
+           &:hover::before{
+               width: 40px;  
+            }
+    }   
+    .dots{
+        margin-top: 20px;
+        width: 7px;
+        height: 7px;
+        background-color: #969595;
+        box-shadow: 20px 0 0 #969595, 40px 0 #969595;
+
+
+    }          
+}

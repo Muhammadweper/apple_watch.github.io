@@ -1,0 +1,41 @@
+.big__watch{
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url(../img/watches.jpg);
+    background-repeat: no-repeat;
+    background-position: 870px 10px;
+    background-size: 50%;
+    border: 1px solid transparent;
+
+    border-bottom: 1px solid rgb(148, 134, 134);
+
+    .content_texts{
+        margin-top: 100px;
+        width: 450px;
+        margin-bottom: 70px;
+        h1{
+            text-transform: capitalize;
+            font-size: 50px;
+        }
+        p{
+            text-align: justify;
+            padding: 60px 0 30px 50px;
+            position: relative;
+            &::before{
+                content: "";
+                height: 90px;
+                border-left: 2px solid rgb(148, 141, 141);
+                position: absolute;
+                left: 10px;
+            }
+        }
+        a{
+            text-decoration: none;
+            background-color: tomato;
+            color: rgb(252, 252, 252);
+            font-style: bold;
+            text-transform: uppercase;
+            padding: 10px 25PX;
+        }
+    }
+}

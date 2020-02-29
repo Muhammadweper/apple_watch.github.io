@@ -1,0 +1,19 @@
+.search-form__input{
+    border: none;
+    padding: 5px 0;   
+    outline: none;
+    border-bottom: 1px solid #222222;
+   &:hover{
+       border-bottom-color: red;
+       box-shadow: 0 0 5px tomato;
+   }
+   &:focus{
+       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+   }   
+}
+@media(max-width:400px){
+    .search-form, 
+    .search-form__input{
+        width: 100%;
+    }
+}
